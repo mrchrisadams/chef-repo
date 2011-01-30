@@ -1,0 +1,10 @@
+= DESCRIPTION:
+
+This is a sample cookbook,  generated as I run through the opscode walkthroughs to finally sort out the state of my own servers I look after when I'm not at work.
+
+= REQUIREMENTS:
+
+= ATTRIBUTES:
+
+= USAGE:
+

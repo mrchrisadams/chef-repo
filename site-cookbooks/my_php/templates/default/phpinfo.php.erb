@@ -1,0 +1,17 @@
+<?
+$host = "localhost";
+$user = "root";
+$pass = "<%= node[:mysql][:server_root_password] %>";
+$con = mysql_connect("localhost",$user,$pass);
+mysql_select_db("mysql");
+
+$query = mysql_query("SHOW STATUS");
+
+while($fetch = mysql_fetch_row($query)) {
+      $stat[$fetch[0]] = $fetch[1];
+}
+
+foreach ($stat as $key => $value) {
+      echo "<p>$key: $value";
+}
+?>

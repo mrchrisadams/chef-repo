@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "recipes": {
+  },
+  "suggestions": {
+  },
+  "long_description": "= DESCRIPTION:\n\nThis is a sample cookbook,  generated as I run through the opscode walkthroughs to finally sort out the state of my own servers I look after when I'm not at work.\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "dependencies": {
+  },
+  "providing": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "replacing": {
+  },
+  "license": "All rights reserved",
+  "maintainer_email": "YOUR_EMAIL",
+  "groupings": {
+  },
+  "name": "my_php",
+  "recommendations": {
+  },
+  "platforms": {
+  },
+  "description": "Installs/Configures my_php"
+}
