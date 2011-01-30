@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: mercurial
+# Cookbook Name:: zsh
 # Recipe:: default
 #
-# Copyright 2009, Opscode, Inc.
+# Copyright 2008-2009, Opscode, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,19 +16,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-package "mercurial" do
-  action :upgrade
+
+package "zsh" do
+  action :install
 end
 
-group 'hg' do
-  gid 310
-end
-
-user "hg" do
-  comment "Mercurial version control user"
-  uid 1010
-  gid 310
-  home "/srv/hg"
-  shell "/bin/sh"
-  password "$1$xBeHKKwZ$eFNZC1BwIK..NSXmoCgbh/"
+case node[:platform]
+when "ubuntu"
+  package "zsh-doc" do
+    action :install
+  end
 end
